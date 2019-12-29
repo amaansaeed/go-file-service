@@ -2,14 +2,14 @@ package main
 
 import (
 	"encoding/json"
-	"file-service/models"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"path"
-
+	
 	"github.com/google/uuid"
+	"github.com/amaansaeed/go-file-service/models"
 )
 
 func (a *app) uploadFile(w http.ResponseWriter, r *http.Request) {
